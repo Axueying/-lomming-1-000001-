@@ -1,1 +1,25 @@
 小鼠行为学实验——lomming实验和光刺激实验结合程序1（000001）
+首先运行matalb程序然后运行bonsai程序；
+
+# 功能介绍
+looming_light_4.m 对应bonsai程序是looming_light_along_inter4;
+
+视觉刺激自动和手动需要等待的时间间隔是一致的； 光刺激之间中间没有时间间隔；变化范围(0,2)2-20度;(2,2)2-40度 身体前方20度给予looming ~代码举例sample:
+looming_light(0, 2)； 分别不同时给予视觉刺激和光刺激,共有4种光刺激，a、b、c、d分别代表四种光刺激； a,b,c,d+m分别手动给予光刺激；space+m 
+表示第一种视觉刺激， t+m表示第二种视觉刺激；space或者t键按下，表示是进入视觉刺激；的等待状态；小老鼠进入自触发，有时间间隔；第一种和第二种达到3刺刺及，
+不再给予刺激；如果手动可以再次触发；给予光刺激的时候也会出现黑框，欸给视觉刺激打标
+
+looming_light_3.m 是视觉刺激和光刺激分别独立触发；对应bonsai程序是looming_light_along_inter; 因为使用bonsai来控制刺激的间隔时间，所以这个时间不准
+确，只设定手动版本，需要把bonsai中Serial StringWrirte屏蔽掉，手动触发之间没有时间间隔；变化范围(0,2)2-20度;(2,2)2-40度 身体前方20度给予looming；
+sample: looming_light(0, 2)； 分别不同时给予视觉刺激和光刺激,共有4种光刺激，a、b、c、d分别代表四种光刺激； a,b,c,d+m分别手动给予光刺激；space+m 
+表示第一种视觉刺激， t+m表示第二种视觉刺激；space或者t键按下，表示是进入视觉刺激的等待状态；小老鼠进入自触发，有时间间隔；第一种和第二种达到3刺刺及，
+不再给予刺激；如果手动可以再次触发； 给予光刺激的时候也会出现黑框，欸给视觉刺激打标
+
+looming_light 是视觉刺激和光刺激同时给予触发；对应bonsai程序是looming_light_all_nointer;变化范围(0,2)2-20度;(2,2)2-40度 身体前方20度给予looming；
+sample: looming_light(0, 2)； 同事给予光刺激和looming,共有4种光刺激，a、b、c、d分别代表四种光刺激； 通过切换looming_light()中的序号，切换进入不同的
+视觉刺激；
+--------------------- 
+作者：A_XUEYING 
+来源：CSDN 
+原文：https://blog.csdn.net/A_XUEYING/article/details/95519523 
+版权声明：本文为博主原创文章，转载请附上博文链接！
